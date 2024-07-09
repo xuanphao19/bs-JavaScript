@@ -1,0 +1,175 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta
+      name="viewport"
+      content="width=device-width, initial-scale=1.0" />
+    <link
+      rel="icon"
+      type="image/x-icon"
+      href="/assets/icons/favicon.ico" />
+    <title>Hoc lap trinh</title>
+    <!-- THƯ VIỆN BOOTSTRAP -->
+    <script src="../assets/vendor/bootstrap/js/bootstrap.bundle.min.js"></script>
+    <link
+      rel="stylesheet"
+      href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css"
+      crossorigin="anonymous" />
+    <link
+      rel="stylesheet"
+      href="../app.css" />
+    <link
+      rel="stylesheet"
+      href="./main.css" />
+  </head>
+  <body>
+    <a
+      href="../index.html"
+      class="btn btn-primary position-fixed top-0 end-0 me-5 mt-3 px-4 rounded-5">
+      Về Trang chủ
+    </a>
+    <!-- ===================== -->
+    <!-- Tự học JavaScript Thành công! -->
+    <!-- ===================== -->
+
+    <h1>Bài 4: Toán Tử Trong JS</h1>
+    <main class="container mt-3">
+      <ol class="operators-list">
+        <h3>Gồm có 5 loại toán tử thường sử dụng</h3>
+        <li class="arithmetic operators">
+          <h4
+            data-bs-toggle="collapse"
+            class="question collapsed"
+            href="#operators1">
+            Toán tử số học gồm:
+          </h4>
+          <ul
+            id="operators1"
+            class="collapse"
+            data-bs-parent=".operators-list">
+            <li>cộng (+)</li>
+            <li>trừ (-)</li>
+            <li>nhân (*)</li>
+            <li>chia (/)</li>
+            <li>lũy thừa (**)</li>
+            <li>chia lấy dư (%)</li>
+            <li>tăng 1 giá trị số (++)</li>
+            <li>giảm 1 giá trị số (--)</li>
+          </ul>
+        </li>
+
+        <li class="assignment operators">
+          <h4
+            data-bs-toggle="collapse"
+            class="question collapsed"
+            href="#operators2">
+            Toán tử gán gồm:
+          </h4>
+          <ul
+            id="operators2"
+            class="collapse"
+            data-bs-parent=".operators-list">
+            <li>gán (=),</li>
+            <li>cộng và gán (+=)</li>
+            <li>trừ và gán (-=)</li>
+            <li>nhân và gán (*=)</li>
+            <li>chia và gán (/=)</li>
+            <li>chia lấy dư và gán (%=)</li>
+          </ul>
+        </li>
+
+        <li class="comparison operators">
+          <h4
+            data-bs-toggle="collapse"
+            class="question collapsed"
+            href="#operators3">
+            Toán tử so sánh gồm:
+          </h4>
+          <ul
+            id="operators3"
+            class="collapse"
+            data-bs-parent=".operators-list">
+            <li>Bằng (==) ' không phân KIỂU biệt dữ liệu</li>
+            <li>Bằng (===) ' có phân KIỂU biệt dữ liệu</li>
+            <li>Khác (!=) ' không phân KIỂU biệt dữ liệu</li>
+            <li>Khác (!==) ' có phân KIỂU biệt dữ liệu</li>
+            <li>Lớn hơn [&gt;]</li>
+            <li>Nhỏ hơn [&lt;]</li>
+            <li>Lớn hơn hoặc bằng [&gt;=]</li>
+            <li>Nhỏ hơn hoặc bằng [=&lt;]</li>
+          </ul>
+        </li>
+
+        <li class="logical operators">
+          <h4
+            data-bs-toggle="collapse"
+            class="question collapsed"
+            href="#operators5">
+            Toán tử logic gồm:
+          </h4>
+          <ul
+            id="operators5"
+            class="collapse"
+            data-bs-parent=".operators-list">
+            <li>Và Và (&&)</li>
+            <li>Hoặc (||)</li>
+            <li>Phủ định (!)</li>
+          </ul>
+        </li>
+
+        <li class="increment-and-decrement operators">
+          <h4
+            data-bs-toggle="collapse"
+            class="question collapsed"
+            href="#operators6">
+            Toán tử tăng giảm
+          </h4>
+          <ol
+            id="operators6"
+            class="collapse"
+            data-bs-parent=".operators-list">
+            <li>
+              Tiền tố:
+              <ul>
+                <li>Gán kết quả tt cho biến gốc.</li>
+                <li>Tăng or giảm một đơn vị</li>
+                <li>Trả về kết quả sau tính toán</li>
+              </ul>
+            </li>
+
+            <li>
+              <span>Hậu tố :</span>
+              <ul>
+                <li>Gán kết quả tt cho biến gốc.</li>
+                <li>Tăng or giảm một đơn vị</li>
+                <li>Trả về kết quả copy</li>
+              </ul>
+            </li>
+          </ol>
+        </li>
+
+        <li class="string operators">
+          <h4
+            data-bs-toggle="collapse"
+            class="question collapsed"
+            href="#operators7">
+            Toán tử chuỗi
+          </h4>
+          <ul
+            id="operators7"
+            class="collapse"
+            data-bs-parent=".operators-list">
+            <li>VD: var firstName = 'Hạ'</li>
+            <li>var lastName = 'Trang'</li>
+            <li>var fullName = firstName + ' ' + lastName</li>
+            <li>console.log = 'fullName'</li>
+          </ul>
+        </li>
+      </ol>
+    </main>
+
+    <script src="./main.js"></script>
+    <!-- ================ -->
+  </body>
+</html>

@@ -1,0 +1,44 @@
+body {
+  width: 100vw;
+  height: 100vh;
+}
+* {
+  margin: 0;
+  padding: 0;
+}
+.dropdown {
+  margin-block: 22px;
+}
+h1 {
+  margin-top: 50px;
+  text-align: center;
+  color: #6b2208;
+  font-size: 50px;
+  font-weight: bold;
+  font-family: "Times New Roman", Times, serif;
+}
+h3 {
+  font-size: 28px;
+}
+ul li {
+  margin-left: 20px;
+  margin-bottom: 0.2rem;
+}
+.question {
+  line-height: 32px;
+  cursor: pointer;
+  transition: color 0.3s;
+  color: #0c83fb;
+}
+.question.collapsed {
+  font-size: 20px;
+  color: #f27818;
+}
+.question.collapsed:hover {
+  color: #0c83fb;
+}
+.operators {
+  margin-left: 30px;
+  font-size: 16px;
+  color: #0d0d0e;
+}

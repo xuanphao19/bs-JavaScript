@@ -1,0 +1,216 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta
+      name="viewport"
+      content="width=device-width, initial-scale=1.0"
+    />
+    <link
+      rel="icon"
+      type="image/x-icon"
+      href="/assets/icons/favicon.ico" />
+    <title>Nested Accordion with Bootstrap</title>
+    <link
+      href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css"
+      rel="stylesheet"
+    />
+  </head>
+  <body>
+    <div class="container mt-5">
+      <div
+        class="accordion"
+        id="parent-1"
+      >
+        <div class="card">
+          <div class="card-header">
+            <div
+              role="button"
+              data-toggle="collapse"
+              data-target="#item1-level-1"
+              aria-controls="item1-level-1"
+            >
+              item1-level-1💔
+            </div>
+          </div>
+          <div
+            id="item1-level-1"
+            class="collapse"
+            data-parent="#parent-1"
+          >
+            <div class="card-body">
+              <!-- Nested Accordion Level 1 -->
+              <div
+                class="accordion"
+                id="level-2"
+              >
+                <div class="card">
+                  <div
+                    class="card-header"
+                    id="nestedHeadingOne"
+                  >
+                    <div
+                      type="button"
+                      data-toggle="collapse"
+                      data-target="#item1-level-2"
+                      aria-controls="item1-level-2"
+                    >
+                      item1-level-2
+                    </div>
+                  </div>
+                  <div
+                    id="item1-level-2"
+                    class="collapse"
+                    data-parent="#level-2"
+                  >
+                    <div class="card-body">
+                      <!-- Deeply Nested Accordion Level 2 -->
+                      <div
+                        class="accordion"
+                        id="level-3"
+                      >
+                        <div class="card">
+                          <div
+                            class="card-header"
+                            type="button"
+                            data-toggle="collapse"
+                            data-target="#item1-level-3"
+                            aria-controls="item1-level-3"
+                          >
+                            Item #1 level-3
+                          </div>
+                          <div
+                            id="item1-level-3"
+                            class="collapse"
+                            aria-labelledby="deepNestedHeadingOne"
+                            data-parent="#level-3"
+                          >
+                            <div class="card-body">This is the deeply nested item's accordion body.</div>
+                          </div>
+                        </div>
+
+                        <div class="card">
+                          <div
+                            class="card-header"
+                            type="button"
+                            data-toggle="collapse"
+                            data-target="#item2-level-3"
+                            aria-controls="item2-level-3"
+                          >
+                            Item #2 level-3
+                          </div>
+                          <div
+                            id="item2-level-3"
+                            class="collapse"
+                            data-parent="#level-3"
+                          >
+                            <div class="card-body">This is another deeply nested item's accordion body.</div>
+                          </div>
+                        </div>
+                      </div>
+                      <!-- End Deeply Nested Accordion -->
+                    </div>
+                  </div>
+                </div>
+
+                <div class="card">
+                  <div class="card-header">
+                    <div
+                      type="button"
+                      data-toggle="collapse"
+                      data-target="#item2-level-2"
+                      aria-controls="item2-level-2"
+                    >
+                      item2-level-2
+                    </div>
+                  </div>
+                  <div
+                    id="item2-level-2"
+                    class="collapse"
+                    data-parent="#level-2"
+                  >
+                    <div class="card-body">This is the nested item's accordion body.</div>
+                  </div>
+                </div>
+              </div>
+              <!-- End Nested Accordion Level 1 -->
+            </div>
+          </div>
+        </div>
+        <!-- Outer Accordion Item 2 -->
+        <div class="card">
+          <div
+            class="card-header"
+            id="headingTwo"
+          >
+            <div
+              role="button"
+              data-toggle="collapse"
+              data-target="#item2-level-1"
+              aria-controls="item2-level-1"
+            >
+              item2-level-1
+            </div>
+          </div>
+          <div
+            id="item2-level-1"
+            class="collapse"
+            aria-labelledby="headingTwo"
+            data-parent="#parent-1"
+          >
+            <div class="card-body">This is the second item's accordion body.</div>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"></script>
+    <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.5.4/dist/umd/popper.min.js"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
+  </body>
+</html>
+
+<!--    --- HIỂU VỀ BỐ CỤC MỘT Website: ---
+
+// Các thẻ cơ bản thông dụng nhất trong một Website:
+
+<!DOCTYPE html>: Khai báo loại tài liệu HTML.
+  <html>: Phần tử gốc của một tài liệu HTML.
+  <head>: Chứa các thông tin về tài liệu, như tiêu đề, liên kết đến các tập tin CSS, scripts, metadata, v.v.
+  <title>: Tiêu đề của tài liệu, hiển thị trên tab của trình duyệt.
+  <meta>: Thông tin metadata tài liệu, như charset, description, keywords, v.v.
+  <link>: Liên kết đến các tài nguyên bên ngoài như CSS.
+  <style>: Chứa các định nghĩa CSS nội tuyến.
+  <script>: Chứa mã JavaScript nội tuyến hoặc liên kết đến tập tin JavaScript bên ngoài.
+
+<body>: Chứa nội dung chính của tài liệu HTML.
+  <h1> đến <h6>: Các thẻ tiêu đề, từ h1 (lớn nhất) đến h6 (nhỏ nhất).
+  <p>: Đoạn văn bản.
+  <a>: Liên kết đến các tài liệu khác hoặc các phần khác trong cùng tài liệu.
+  <img>: Chèn hình ảnh.
+  <ul>, <ol>, <li>: Danh sách không có thứ tự (unordered list), danh sách có thứ tự (ordered list), và mục của danh sách (list item).
+  <div>: Phần tử khối dùng để tạo các khối chứa.
+  <span>: Phần tử nội tuyến dùng để bọc một phần của nội dung để áp dụng kiểu dáng.
+  <table>, <tr>, <td>, <th>: Bảng, hàng của bảng, ô của bảng, và tiêu đề bảng.
+  <form>: Tạo biểu mẫu nhập liệu.
+    <input>: Phần tử nhập liệu.
+    <textarea>: Vùng nhập liệu dạng văn bản.
+    <button>: Nút bấm.
+    <label>: Nhãn cho các phần tử nhập liệu.
+    <select>, <option>: Danh sách chọn và mục trong danh sách chọn.
+
+  <header>: Phần đầu của tài liệu hoặc một phần của tài liệu.
+  <footer>: Phần chân của tài liệu hoặc một phần của tài liệu.
+  <nav>: Phần tử điều hướng.
+  <article>: Nội dung độc lập và có thể tái sử dụng.
+  <section>: Phần của tài liệu.
+  <aside>: Định nghĩa nội dung bên lề.
+
+// ========================
+
+// Tổng hợp các thẻ theo phân loại chức năng sử dụng:
+
+Những thẻ này là nền tảng của HTML và được sử dụng rộng rãi trong phát triển web.
+
+-->

@@ -1,0 +1,13 @@
+h1 {
+  margin-top: 50px;
+  text-align: center;
+  color: #6b2208;
+  font-size: 50px;
+  font-weight: bold;
+  font-family: "Times New Roman", Times, serif;
+  font-style: italic;
+  text-transform: uppercase;
+}
+.list-lesson {
+  height: 50vh;
+}

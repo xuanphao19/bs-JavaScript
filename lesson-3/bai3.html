@@ -1,0 +1,94 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta
+      name="viewport"
+      content="width=device-width, initial-scale=1.0" />
+    <link
+      rel="icon"
+      type="image/x-icon"
+      href="/assets/icons/favicon.ico" />
+    <title>Hoc lap trinh</title>
+    <!-- THƯ VIỆN BOOTSTRAP -->
+    <script src="../assets/vendor/bootstrap/js/bootstrap.bundle.min.js"></script>
+    <link
+      rel="stylesheet"
+      href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css"
+      crossorigin="anonymous" />
+    <link
+      rel="stylesheet"
+      href="../app.css" />
+    <link
+      rel="stylesheet"
+      href="./main.css" />
+  </head>
+  <body>
+    <a
+      href="../index.html"
+      class="btn btn-primary position-fixed top-0 end-0 me-5 mt-3 px-4 rounded-5">
+      Về Trang chủ
+    </a>
+    <!-- ================ -->
+    <!-- Khu vực thực hành phía dưới như bình thường nhé Chíp! -->
+    <!-- ================ -->
+
+    <h1 class="mt-5">Bài 3: CÁC HÀM CÓ SẴN TRONG Js: Built-in functions!</h1>
+    <main
+      class="ha-trang"
+      id="hatrang">
+      <div class="a123">
+        <ol>
+          <li>console.log('thông báo');</li>
+          <li>console.warn('cảnh báo');</li>
+          <li>console.error('thông báo lỗi');</li>
+          <li>confirm('HELLO');</li>
+          <li>prompt('Nhập Thông Tin');</li>
+          <li>Thông báo 1 lần sau 1 khoảng thời gian: setTimeout(function () { alert('HELLO HẠ TRANG'); }, 1000);</li>
+          <li>
+            Thông báo liên tục sau 1 khoảng thời gian: setInterval(function () { alert('CHÀO MỪNG BẠN TRỞ LẠI '); },
+            10000) ;
+          </li>
+        </ol>
+
+        <!-- Đây là thẻ trình bày code -->
+        <!-- Trình bày ở đây như nào thì màn hình sẽ hiển thị như thế: -->
+        <pre class="pre-code">
+        <code>
+          // Thẻ &lt;pre&gt; v&agrave; thẻ &lt;code&gt; dùng để trình bày code
+
+          // Hàm console.log hiện thông báo ở tab console
+            console.log('thông báo');
+
+          // Hàm console.warn hiện cảnh báo
+            console.warn('cảnh báo');
+
+          // Hàm console.error hiện thông báo lỗi
+            console.error('thông báo lỗi');
+
+          // Hàm confirm bật lên hộp thoại xác nhận
+            confirm('HELLO');
+
+          // Hàm confirm bật lên hộp thoại xác nhận kèm input:
+            prompt('Nhập Thông Tin');
+
+          // Hàm setTimeout sẻ chỉ chạy 1 lần
+          // Sau 1 khoảng thời gian chỉ định (1000 === 1s)
+            setTimeout(function () {
+              alert('HELLO HẠ TRANG');
+            }, 1000);
+
+          // Hàm setInterval sẻ chạy lặp lại liên tục
+          // Cứ sau (10000 === 10s) lại được gọi lại một lần
+            setInterval(function () {
+              alert('CHÀO MỪNG BẠN TRỞ LẠI ');
+            }, 10000);
+        </code>
+      </pre>
+      </div>
+    </main>
+
+    <script src="./main.js"></script>
+    <!-- ================ -->
+  </body>
+</html>

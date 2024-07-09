@@ -1,0 +1,264 @@
+<!DOCTYPE html>
+<html lang="vi">
+  <head>
+    <meta charset="UTF-8" />
+    <meta
+      name="viewport"
+      content="width=device-width, initial-scale=1.0"
+    />
+    <title>Document</title>
+    <link
+      rel="stylesheet"
+      href="https://cdn.jsdelivr.net/npm/simple-keyboard@latest/build/css/index.css"
+    />
+  </head>
+  <body>
+    <style>
+      body {
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        flex-direction: column;
+        width: 100vw;
+        min-height: 100vh;
+        cursor: auto !important;
+      }
+      .textarea {
+        position: relative;
+      }
+      .textarea textarea {
+        width: 1200px;
+        height: 200px;
+        background: #fff5e9;
+        font-size: 160px;
+        font-style: italic;
+        color: #a342cd;
+        outline: transparent;
+        border: transparent;
+        border-radius: 20px;
+        cursor: context-menu !important;
+        padding: 20px;
+        font-family: serif;
+        text-align: center;
+        font-family: Times New Roman;
+      }
+      .abc {
+        font-size: 60px;
+        font-style: italic;
+        color: #a342cd;
+        margin-bottom: 30px;
+        cursor: pointer !important;
+      }
+      .abcd {
+        width: 100vw;
+      }
+      .abc2 {
+        width: max-content;
+        margin: auto;
+        margin-top: 20px;
+      }
+      .abc span {
+        display: inline-flex;
+        align-items: center;
+        justify-content: center;
+        width: 52px;
+        height: 50px;
+        flex-shrink: 0;
+        padding: 10px;
+        border-radius: 10px;
+        cursor: auto;
+      }
+      .abc span:hover {
+        background: #b6f1fa;
+        color: #fa0606;
+        cursor: pointer !important;
+      }
+      .remove-btn,
+      .speak-btn,
+      .clear-btn {
+        margin: 10px 0;
+        padding: 10px 20px;
+        font-size: 20px;
+        border: 1px solid #ccc;
+        border-radius: 10px;
+        background-color: #f8f8f8;
+        cursor: pointer;
+        position: absolute;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+      }
+      .remove-btn {
+        bottom: 5px;
+        right: 18%;
+        left: 72%;
+      }
+      .clear-btn {
+        bottom: 5px;
+        right: 2%;
+        left: 84%;
+      }
+      .speak-btn {
+        right: 30%;
+        left: 60%;
+        bottom: 5px;
+      }
+      .clear-btn:hover {
+        opacity: 0.8;
+        background: #b6f1fa;
+        color: #fa0606;
+      }
+    </style>
+
+    <div class="abc">
+      <span>`</span>
+      <span>'</span>
+      <span>?</span>
+      <span>~</span>
+      <span>.</span>
+    </div>
+    <div class="abc">
+      <span>a</span>
+      <span>ă</span>
+      <span>â</span>
+      <span>b</span>
+      <span>c</span>
+      <span>d</span>
+      <span>đ</span>
+      <span>e</span>
+      <span>ê</span>
+      <span>g</span>
+      <span>h</span>
+      <span>i</span>
+      <span>k</span>
+      <span>l</span>
+    </div>
+    <div class="textarea">
+      <textarea id="textarea1"></textarea>
+      <button
+        id="removeButton"
+        class="remove-btn"
+      >
+        🚕🚗✈
+      </button>
+      <button
+        id="speakButton"
+        class="speak-btn"
+      >
+        🟢🟡🔴
+      </button>
+      <button
+        id="clearButton"
+        class="clear-btn"
+      >
+        ⛔🛑🚫🚭
+      </button>
+    </div>
+    <div class="abcd">
+      <div class="abc abc2">
+        <span>m</span>
+        <span>n</span>
+        <span>o</span>
+        <span>ô</span>
+        <span>ơ</span>
+        <span>p</span>
+        <span>q</span>
+        <span>r</span>
+        <span>s</span>
+        <span>t</span>
+        <span>u</span>
+        <span>ư</span>
+        <span>v</span>
+        <span>x</span>
+        <span>y</span>
+      </div>
+
+      <div class="abc abc2">
+        <span>1</span>
+        <span>2</span>
+        <span>3</span>
+        <span>4</span>
+        <span>5</span>
+        <span>6</span>
+        <span>7</span>
+        <span>8</span>
+        <span>9</span>
+      </div>
+      <div class="abc abc2"><span>0</span></div>
+    </div>
+    <!--
+
+
+    -->
+
+    <h1>Text-to-Speech</h1>
+    <textarea
+      id="textarea-textInput"
+      rows="4"
+      cols="50"
+      placeholder="Enter text here"
+    ></textarea>
+    <br />
+    <button id="speakButtons">Speak</button>
+
+    <script>
+      document.addEventListener('DOMContentLoaded', (event) => {
+        const speakButton = document.getElementById('speakButtons');
+        const textInput = document.getElementById('textarea-textInput');
+
+        if (speakButton && textInput) {
+          speakButton.addEventListener('click', function () {
+            const text = textInput.value;
+            console.log('str1', text);
+            const url = `https://texttospeech.responsivevoice.org/v1/text:synthesize?text=${encodeURIComponent(
+              text
+            )}&lang=vi&engine=g1&name=&pitch=0.5&rate=0.4&volume=1&key=tbRCT33e&gender=female`;
+
+            const audio = new Audio(url);
+            audio.play();
+          });
+        } else {
+          console.error('Element not found');
+        }
+      });
+    </script>
+    <!-- <script src="https://code.responsivevoice.org/responsivevoice.js?key=tbRCT33e"></script> -->
+
+    <script src="./responsivevoice.js"></script>
+
+    <script>
+      document.addEventListener('DOMContentLoaded', function () {
+        const spans = document.querySelectorAll('.abc span');
+        const textarea = document.getElementById('textarea1');
+        const clearButton = document.getElementById('clearButton');
+        const speakButton = document.getElementById('speakButton');
+
+        function speak(text) {
+          responsiveVoice.speak(text, 'Vietnamese Female', { rate: 0.8 });
+        }
+
+        spans.forEach((span) => {
+          span.addEventListener('click', () => {
+            textarea.value += span.textContent;
+            speak(span.textContent);
+          });
+        });
+
+        clearButton.addEventListener('click', () => {
+          textarea.value = '';
+        });
+
+        speakButton.addEventListener('click', () => {
+          const text = textarea.value === 0 ? '0' : textarea.value;
+          speak(text);
+        });
+
+        removeButton.addEventListener('click', function () {
+          let currentValue = textarea.value;
+          currentValue = currentValue.slice(0, -1);
+          textarea.value = currentValue;
+        });
+      });
+    </script>
+  </body>
+</html>

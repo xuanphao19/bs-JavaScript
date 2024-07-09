@@ -1,0 +1,15 @@
+h1 {
+  font-size: 30px;
+  color: #802;
+  display: block;
+  margin-top: 50px !important;
+  text-align: center;
+}
+ul {
+  margin-left: 20px;
+  /* list-style: none; */
+}
+.boolean {
+  font-size: 16px;
+  color: #0d0d0e;
+}

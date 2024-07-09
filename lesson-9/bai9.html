@@ -1,0 +1,139 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta
+      name="viewport"
+      content="width=device-width, initial-scale=1.0" />
+    <link
+      rel="icon"
+      type="image/x-icon"
+      href="/assets/icons/favicon.ico" />
+    <title>Hoc lap trinh</title>
+    <!-- THƯ VIỆN BOOTSTRAP -->
+    <script src="../assets/vendor/bootstrap/js/bootstrap.bundle.min.js"></script>
+    <link
+      rel="stylesheet"
+      href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css"
+      crossorigin="anonymous" />
+    <link
+      rel="stylesheet"
+      href="../app.css" />
+    <link
+      rel="stylesheet"
+      href="./main.css" />
+  </head>
+  <body>
+    <a
+      href="../index.html"
+      class="btn btn-primary position-fixed top-0 end-0 me-5 mt-3 px-4 rounded-5">
+      Về Trang chủ
+    </a>
+    <div class="container">
+      <h1>Bài 9: Khái Niệm Về Hàm Function</h1>
+      <ul>
+        <li>Trong JavaScript, một hàm (function) là một khối mã được thiết kế để thực hiện một nhiệm vụ cụ thể</li>
+        <li>Hàm có thể nhận đầu vào (được gọi là tham số), thực hiện một số thao tác và trả về một giá trị đầu ra.</li>
+        <li>
+          Tại sao sử dụng hàm?
+          <ul>
+            <li>
+              Tái sử dụng mã: Hàm cho phép bạn tái sử dụng đoạn mã, giảm thiểu sự lặp lại và tăng tính tổ chức của mã
+              nguồn
+            </li>
+            <li>Chia nhỏ vấn đề: Bạn có thể chia nhỏ vấn đề phức tạp thành các phần nhỏ hơn và dễ quản lý hơn.</li>
+            <li>
+              Khả năng bảo trì: Việc thay đổi hay sửa lỗi trở nên dễ dàng hơn khi mã được chia thành các hàm nhỏ, độc
+              lập.
+            </li>
+          </ul>
+        </li>
+        <li>
+          Tính chất của hàm:
+          <ul>
+            <li>Không thực thi khi định nghĩa</li>
+            <li>Sẽ thực thi khi được gọi</li>
+            <li>Có thể nhận tham số</li>
+            <li>Có thể trả về một giá trị</li>
+            <li>Cách gọi hàm gồm có tên hàm và toán tử call</li>
+          </ul>
+        </li>
+      </ul>
+
+      <h3>Cấu trúc của một hàm</h3>
+      <p>
+        Một hàm trong JavaScript được khai báo bằng từ khóa function, theo sau là tên hàm, danh sách tham số (có thể có
+        hoặc không) và thân hàm (khối mã sẽ được thực hiện khi hàm được gọi).
+      </p>
+      <p>Ví dụ cơ bản:</p>
+      <p>Declaration Function:</p>
+      <pre>
+  <code>
+    function greet(name) {
+      return "Hello, " + name + "!";
+    }
+  </code>
+</pre>
+      <p>Phân tích ví dụ:</p>
+      <p>function: là từ khóa khai báo hàm.</p>
+      <p>greet: là tên hàm.</p>
+      <p>name: là tham số của hàm.</p>
+      <p>return: là từ khóa dùng để trả về giá trị từ hàm.</p>
+      <hr />
+      <h4>Expression Function:</h4>
+      <pre>
+  <code>
+      const subtract = function(a, b) {
+          return a - b;
+      };
+      console.log(subtract(5, 3)); // 2
+  </code>
+</pre>
+
+      <h3>Gọi một hàm</h3>
+      <p>
+        Sau khi khai báo, bạn có thể gọi hàm bằng cách sử dụng tên hàm kèm theo toán tử call (). Các đối số cần thiết
+        đặt trong dấu ngoặc đơn - nếu có -
+      </p>
+      <h3>Một số hàm nâng cao</h3>
+      <h4>Hàm ẩn danh (Anonymous Function):</h4>
+      <p>Anonymous Function trong hàm callback:</p>
+      <pre>
+  <code>
+    setTimeout(function() {
+      console.log("Hello, World!");
+    }, 1000);
+  </code>
+</pre>
+      <h4>Arrow Function:</h4>
+      <p>Cách viết ngắn gọn, nâng cao của một hàm.</p>
+      <pre>
+  <code>
+      const multiply = (a, b) =&gt; {
+          return a * b;
+      };
+      console.log(multiply(4, 3)); // 12
+  </code>
+</pre>
+      <h4>Immediately Invoked Function Expression (IIFE):</h4>
+      <p>Hàm được gọi ngay lập tức sau khi được định nghĩa.</p>
+      <pre>
+  <code>
+    (function() {
+        console.log("Hello, World!");
+    })();
+  </code>
+</pre>
+      <pre class="w-75 fs-5">
+  <code>
+    // ! Hàm::::
+    // --- Khi làm việc với hàm cần nắm chắc ---
+    // + Định nghĩa ở đâu? Định nghĩa ntn?
+    // + Nhận bao nhiêu tham số? Tham số là gì?
+    // + Trả về cái gì?
+    // + Điều kiện (logic) để trả về là gì? (có hay không).
+  </code>
+</pre>
+    </div>
+  </body>
+</html>
