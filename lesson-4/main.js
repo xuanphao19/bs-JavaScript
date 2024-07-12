@@ -96,6 +96,8 @@ console.log(typeof 123); // "number"
 console.log(typeof "abc"); // "string"
 console.log(typeof true); // "boolean"
 console.log([1, 2, 3] instanceof Array); // true
+console.log(Array.isArray([1, 2, 3])); // true
 console.log({ a: 1 } instanceof Object); // true
+// instanceof Không thực sự tin cậy nếu qua nhiều phiên bản?
 
 // Hiểu rõ các toán tử TRÊN sẽ giúp bạn viết mã JavaScript một cách hiệu quả và chính xác hơn. result === success!

@@ -2,33 +2,17 @@
 <html lang="en">
   <head>
     <meta charset="UTF-8" />
-    <meta
-      name="viewport"
-      content="width=device-width, initial-scale=1.0" />
-    <link
-      rel="icon"
-      type="image/x-icon"
-      href="/assets/icons/favicon.ico" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="icon" type="image/x-icon" href="/assets/icons/favicon.ico" />
     <title>Hoc lap trinh</title>
     <!-- THƯ VIỆN BOOTSTRAP -->
     <script src="../assets/vendor/bootstrap/js/bootstrap.bundle.min.js"></script>
-    <link
-      rel="stylesheet"
-      href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css"
-      crossorigin="anonymous" />
-    <link
-      rel="stylesheet"
-      href="../app.css" />
-    <link
-      rel="stylesheet"
-      href="./main.css" />
+    <link href="../assets/vendor/bootstrap/css/bootstrap.min.css" rel="stylesheet" />
+    <link rel="stylesheet" href="../app.css" />
+    <link rel="stylesheet" href="./main.css" />
   </head>
   <body>
-    <a
-      href="../index.html"
-      class="btn btn-primary position-fixed top-0 end-0 me-5 mt-3 px-4 rounded-5">
-      Về Trang chủ
-    </a>
+    <a href="../index.html" class="btn btn-primary position-fixed top-0 end-0 me-5 mt-3 px-4 rounded-5">Về Trang chủ</a>
     <!-- ===================== -->
     <!-- Tự học JavaScript Thành công! -->
     <!-- ===================== -->
@@ -40,34 +24,16 @@
       <ol class="label-list">
         <h3>Kiểu Dữ liệu nguyên thủy</h3>
         <li class="arithmetic label">
-          <h4
-            data-bs-toggle="collapse"
-            class="label collapsed"
-            href="#label1"
-            role="button">
-            Dữ liệu số :
-          </h4>
+          <h4 data-bs-toggle="collapse" class="label collapsed" href="#label1" role="button">Dữ liệu số :</h4>
 
-          <ul
-            id="label1"
-            class="collapse"
-            data-bs-parent=".label-list">
+          <ul id="label1" class="collapse" data-bs-parent=".label-list">
             <li><div>Dùng để biểu diễn các số. Dữ liệu số bao gồm các số như: 1; 2; 2,5;.....</div></li>
             <li>
               <div class="number">
                 <p>LÀM VIỆC VỚI Number:</p>
                 <div class="">
-                  <p
-                    role="button"
-                    data-bs-toggle="collapse"
-                    class="collapsed"
-                    href="#number1">
-                    NaN in JavaScript:
-                  </p>
-                  <ul
-                    id="number1"
-                    class="collapse mb-4"
-                    data-bs-parent=".number">
+                  <p role="button" data-bs-toggle="collapse" class="collapsed" href="#number1">NaN in JavaScript:</p>
+                  <ul id="number1" class="collapse mb-4" data-bs-parent=".number">
                     <li>Phép tính không hợp lệ trả về NaN</li>
                     <li>var result = 20 / "ABC"; // NaN</li>
                     <li>Type of vẫn trả ra number</li>
@@ -77,34 +43,18 @@
                 </div>
 
                 <div class="">
-                  <p
-                    role="button"
-                    data-bs-toggle="collapse"
-                    class="collapsed"
-                    href="#number2">
-                    Initialize a number:
-                  </p>
-                  <ul
-                    id="number2"
-                    class="collapse mb-4"
-                    data-bs-parent=".number">
+                  <p role="button" data-bs-toggle="collapse" class="collapsed" href="#number2">Initialize a number:</p>
+                  <ul id="number2" class="collapse mb-4" data-bs-parent=".number">
                     <li>var age = 15;</li>
                     <li>var age1 = new Number(18);</li>
                   </ul>
                 </div>
 
                 <div class="">
-                  <p
-                    role="button"
-                    data-bs-toggle="collapse"
-                    class="collapsed"
-                    href="#number3">
+                  <p role="button" data-bs-toggle="collapse" class="collapsed" href="#number3">
                     Convert Number to String::
                   </p>
-                  <ul
-                    id="number3"
-                    class="collapse mb-4"
-                    data-bs-parent=".number">
+                  <ul id="number3" class="collapse mb-4" data-bs-parent=".number">
                     <li>var age = 15;</li>
                     <li>console.log(age.toString()); // =&gt String</li>
                     <li>toString() Không nhận tham số</li>
@@ -112,17 +62,10 @@
                 </div>
 
                 <div class="">
-                  <p
-                    role="button"
-                    data-bs-toggle="collapse"
-                    class="collapsed"
-                    href="#number4">
+                  <p role="button" data-bs-toggle="collapse" class="collapsed" href="#number4">
                     Round decimal numbers:
                   </p>
-                  <ul
-                    id="number4"
-                    class="collapse mb-4"
-                    data-bs-parent=".number">
+                  <ul id="number4" class="collapse mb-4" data-bs-parent=".number">
                     <li>var PI = 3.14;</li>
                     <li>console.log(PI.toFixed()); // =&gt 3</li>
                     <li>Làm tròn số thập phân. Trả ra string</li>
@@ -136,17 +79,10 @@
                 </div>
 
                 <div class="">
-                  <p
-                    role="button"
-                    data-bs-toggle="collapse"
-                    class="collapsed"
-                    href="#number5">
+                  <p role="button" data-bs-toggle="collapse" class="collapsed" href="#number5">
                     Number.isFinite(): Kiểm tra số hữu hạn
                   </p>
-                  <ul
-                    id="number5"
-                    class="collapse mb-4"
-                    data-bs-parent=".number">
+                  <ul id="number5" class="collapse mb-4" data-bs-parent=".number">
                     <li>Number.isFinite(10); // true</li>
                     <li>Phương thức Number.isFinite() nhận một tham số (number type)</li>
                     <li>Trả về boolean (Số hữu hạn: true, Không phải số hữu hạn: false)</li>
@@ -158,35 +94,17 @@
         </li>
 
         <li class="assignment label">
-          <h4
-            data-bs-toggle="collapse"
-            class="label collapsed"
-            href="#label2"
-            role="button">
-            Dữ liệu chuỗi
-          </h4>
+          <h4 data-bs-toggle="collapse" class="label collapsed" href="#label2" role="button">Dữ liệu chuỗi</h4>
 
-          <ul
-            id="label2"
-            class="collapse"
-            data-bs-parent=".label-list">
+          <ul id="label2" class="collapse" data-bs-parent=".label-list">
             <div>Dùng để biểu diễn các chuỗi ký tự, bao gồm các ký tự chữ và số hoặc những ký tự khác.</div>
             <li>VD: var a = 'Hạ Trang 15'</li>
             <li>
               <div class="string">
                 <p>LÀM VIỆC VỚI CHUỖI:</p>
                 <div class="">
-                  <p
-                    role="button"
-                    data-bs-toggle="collapse"
-                    class="collapsed"
-                    href="#string1">
-                    Khai báo một chuỗi:
-                  </p>
-                  <ul
-                    id="string1"
-                    class="collapse mb-4"
-                    data-bs-parent=".string">
+                  <p role="button" data-bs-toggle="collapse" class="collapsed" href="#string1">Khai báo một chuỗi:</p>
+                  <ul id="string1" class="collapse mb-4" data-bs-parent=".string">
                     <li>Cú pháp: var myInfo = 'Hạ Trang - 15'</li>
                     <li>var là từ khóa khai báo biến</li>
                     <li>myInfo là tên biến</li>
@@ -199,17 +117,8 @@
                 </div>
 
                 <div>
-                  <p
-                    role="button"
-                    data-bs-toggle="collapse"
-                    class="collapsed"
-                    href="#string2">
-                    Nối chuỗi:
-                  </p>
-                  <ul
-                    id="string2"
-                    class="collapse mb-4"
-                    data-bs-parent=".string">
+                  <p role="button" data-bs-toggle="collapse" class="collapsed" href="#string2">Nối chuỗi:</p>
+                  <ul id="string2" class="collapse mb-4" data-bs-parent=".string">
                     <li>var firstName = "Nguyen";</li>
                     <li>var lastName = "Trang";</li>
                     <li>var fullName = firstName + lastName;</li>
@@ -219,34 +128,20 @@
                 </div>
 
                 <div>
-                  <p
-                    role="button"
-                    data-bs-toggle="collapse"
-                    class="collapsed"
-                    href="#string3">
+                  <p role="button" data-bs-toggle="collapse" class="collapsed" href="#string3">
                     Kiểm tra độ dài chuỗi bằng thuộc tính length:
                   </p>
-                  <ul
-                    id="string3"
-                    class="collapse mb-4"
-                    data-bs-parent=".string">
+                  <ul id="string3" class="collapse mb-4" data-bs-parent=".string">
                     <li>var fullName1 = "Hạ Trang";</li>
                     <li>console.log(fullName1.length);</li>
                   </ul>
                 </div>
 
                 <div>
-                  <p
-                    role="button"
-                    data-bs-toggle="collapse"
-                    class="collapsed"
-                    href="#string4">
+                  <p role="button" data-bs-toggle="collapse" class="collapsed" href="#string4">
                     Phương thức indexOf: Tìm vị trí của chuỗi
                   </p>
-                  <ul
-                    id="string4"
-                    class="collapse mb-4"
-                    data-bs-parent=".string">
+                  <ul id="string4" class="collapse mb-4" data-bs-parent=".string">
                     <li>var myString1 = "Xuan Bao Bao";</li>
                     <li>console.log(myString1.indexOf("Bao"));</li>
                     <li>indexOf - Có thể nhận một hoặc hai tham số</li>
@@ -258,17 +153,10 @@
                 </div>
 
                 <div>
-                  <p
-                    role="button"
-                    data-bs-toggle="collapse"
-                    class="collapsed"
-                    href="#string5">
+                  <p role="button" data-bs-toggle="collapse" class="collapsed" href="#string5">
                     Phương thức lastIndexOf: Tìm vị trí của chuỗi
                   </p>
-                  <ul
-                    id="string5"
-                    class="collapse mb-4"
-                    data-bs-parent=".string">
+                  <ul id="string5" class="collapse mb-4" data-bs-parent=".string">
                     <li>var myString1 = "Xuan Bao Bao";</li>
                     <li>console.log(myString1.lastIndexOf("Bao"));</li>
                     <li>lastIndexOf - Tìm ví trí chuỗi con hoặc (ký tự chuỗi) cuối cùng lặp lại trong chuỗi</li>
@@ -277,17 +165,10 @@
                 </div>
 
                 <div>
-                  <p
-                    role="button"
-                    data-bs-toggle="collapse"
-                    class="collapsed"
-                    href="#string6">
+                  <p role="button" data-bs-toggle="collapse" class="collapsed" href="#string6">
                     Phương thức search: Tìm vị trí của chuỗi
                   </p>
-                  <ul
-                    id="string6"
-                    class="collapse mb-4"
-                    data-bs-parent=".string">
+                  <ul id="string6" class="collapse mb-4" data-bs-parent=".string">
                     <li>var myString1 = "Xuan Bao Bao";</li>
                     <li>console.log(myString1.search(/Bao/g));</li>
                     <li>
@@ -298,17 +179,10 @@
                 </div>
 
                 <div>
-                  <p
-                    role="button"
-                    data-bs-toggle="collapse"
-                    class="collapsed"
-                    href="#string7">
+                  <p role="button" data-bs-toggle="collapse" class="collapsed" href="#string7">
                     Phương thức slice: Cắt ký tự trong chuỗi
                   </p>
-                  <ul
-                    id="string7"
-                    class="collapse mb-4"
-                    data-bs-parent=".string">
+                  <ul id="string7" class="collapse mb-4" data-bs-parent=".string">
                     <li>var myString2 = "Xuan Bao";</li>
                     <li>console.log(myString2.slice(0, 5));</li>
                     <li>Cắt từ trái sang phải: thì truyền vào số dương</li>
@@ -323,17 +197,10 @@
                 </div>
 
                 <div>
-                  <p
-                    role="button"
-                    data-bs-toggle="collapse"
-                    class="collapsed"
-                    href="#string8">
+                  <p role="button" data-bs-toggle="collapse" class="collapsed" href="#string8">
                     Phương thức replace: Thay thế ký tự trong chuỗi
                   </p>
-                  <ul
-                    id="string8"
-                    class="collapse mb-4"
-                    data-bs-parent=".string">
+                  <ul id="string8" class="collapse mb-4" data-bs-parent=".string">
                     <li>var myString3 = "Nguyen Thu Trang";</li>
                     <li>myString3.replace("Thu", "Hạ");</li>
 
@@ -348,17 +215,10 @@
                 </div>
 
                 <div>
-                  <p
-                    role="button"
-                    data-bs-toggle="collapse"
-                    class="collapsed"
-                    href="#string9">
+                  <p role="button" data-bs-toggle="collapse" class="collapsed" href="#string9">
                     Phương thức Convert chuỗi (Hoa - Thường):
                   </p>
-                  <ul
-                    id="string9"
-                    class="collapse mb-4"
-                    data-bs-parent=".string">
+                  <ul id="string9" class="collapse mb-4" data-bs-parent=".string">
                     <li>var myString3 = "Nguyen Thu Trang";</li>
                     <li>myString3.toUpperCase();</li>
                     <li>Phương thức toUpperCase sẽ trả về chuỗi viết thành chữ in hoa</li>
@@ -368,17 +228,10 @@
                 </div>
 
                 <div>
-                  <p
-                    role="button"
-                    data-bs-toggle="collapse"
-                    class="collapsed"
-                    href="#string10">
+                  <p role="button" data-bs-toggle="collapse" class="collapsed" href="#string10">
                     Phương thức trim(): Loại bỏ khoảng trắng dư
                   </p>
-                  <ul
-                    id="string10"
-                    class="collapse mb-4"
-                    data-bs-parent=".string">
+                  <ul id="string10" class="collapse mb-4" data-bs-parent=".string">
                     <li>var myString6 = " Xuan Bao ";</li>
                     <li>console.log(myString6.trim());</li>
                     <li>Dùng để loại bỏ khoảng trắng dư thừa ở hai đầu của chuỗi.</li>
@@ -387,17 +240,10 @@
                 </div>
 
                 <div>
-                  <p
-                    role="button"
-                    data-bs-toggle="collapse"
-                    class="collapsed"
-                    href="#string11">
+                  <p role="button" data-bs-toggle="collapse" class="collapsed" href="#string11">
                     Phương thức split(): Convert string to Array:
                   </p>
-                  <ul
-                    id="string11"
-                    class="collapse mb-4"
-                    data-bs-parent=".string">
+                  <ul id="string11" class="collapse mb-4" data-bs-parent=".string">
                     <li>var myString7 = "Xuan Bao, Ha Trang, Thu Trang";</li>
                     <li>console.log(myString7.split(", "));</li>
                     <li>Chỉ nhận một tham số. (string type).</li>
@@ -406,17 +252,10 @@
                 </div>
 
                 <div>
-                  <p
-                    role="button"
-                    data-bs-toggle="collapse"
-                    class="collapsed"
-                    href="#string12">
+                  <p role="button" data-bs-toggle="collapse" class="collapsed" href="#string12">
                     Phương thức Lấy ra giá trị chuỗi:
                   </p>
-                  <ul
-                    id="string12"
-                    class="collapse mb-4"
-                    data-bs-parent=".string">
+                  <ul id="string12" class="collapse mb-4" data-bs-parent=".string">
                     <li>var myString8 = "Xuan Bao, Ha Trang, Thu Trang";</li>
                     <li>console.log(myString8.charAt(5));</li>
                     <li>Chỉ nhận một tham số (number type).</li>
@@ -436,60 +275,29 @@
 
         <li class="comparison label">
           <h4>
-            <a
-              class="nav-link"
-              href="../lesson-5/bai5.html">
-              Dữ Liệu Boolean (Bài 5)
-            </a>
+            <a class="nav-link" href="../lesson-5/bai5.html">Dữ Liệu Boolean (Bài 5)</a>
           </h4>
         </li>
 
         <li class="logical label">
-          <h4
-            data-bs-toggle="collapse"
-            class="label collapsed"
-            href="#label5"
-            role="button">
-            Dữ liệu undefined:
-          </h4>
+          <h4 data-bs-toggle="collapse" class="label collapsed" href="#label5" role="button">Dữ liệu undefined:</h4>
 
-          <ul
-            id="label5"
-            class="collapse"
-            data-bs-parent=".label-list">
+          <ul id="label5" class="collapse" data-bs-parent=".label-list">
             <p>Dữ liệu undefine là kiểu dữ liệu mà khi ta tạo ra một biến nhưng không gắn giá trị cho nó</p>
             <li>var age;</li>
           </ul>
         </li>
 
         <li class="increment-and-decrement label">
-          <h4
-            data-bs-toggle="collapse"
-            class="label collapsed"
-            href="#label6"
-            role="button">
-            Dữ liệu Null
-          </h4>
-          <ul
-            id="label6"
-            class="collapse"
-            data-bs-parent=".label-list">
+          <h4 data-bs-toggle="collapse" class="label collapsed" href="#label6" role="button">Dữ liệu Null</h4>
+          <ul id="label6" class="collapse" data-bs-parent=".label-list">
             <p>Dữ liệu Null là kiểu dữ liệu vô giá trị không có gì</p>
           </ul>
         </li>
 
         <li class="string label">
-          <h4
-            data-bs-toggle="collapse"
-            class="label collapsed"
-            href="#label7"
-            role="button">
-            Kiểu phức tạp
-          </h4>
-          <ol
-            id="label7"
-            class="collapse"
-            data-bs-parent=".operators-list">
+          <h4 data-bs-toggle="collapse" class="label collapsed" href="#label7" role="button">Kiểu phức tạp</h4>
+          <ol id="label7" class="collapse" data-bs-parent=".operators-list">
             <li>
               Function :
               <ul>
@@ -507,17 +315,8 @@
                     <h4>Object in JavaScript:</h4>
                     <p>LÀM VIỆC VỚI Object:</p>
                     <div class="">
-                      <p
-                        role="button"
-                        data-bs-toggle="collapse"
-                        class="collapsed"
-                        href="#object1">
-                        Create a Object:
-                      </p>
-                      <ul
-                        id="object1"
-                        class="collapse mb-4"
-                        data-bs-parent=".object">
+                      <p role="button" data-bs-toggle="collapse" class="collapsed" href="#object1">Create a Object:</p>
+                      <ul id="object1" class="collapse mb-4" data-bs-parent=".object">
                         <li>Phép tính không hợp lệ trả về NaN</li>
                       </ul>
                     </div>
@@ -533,17 +332,10 @@
                     </p>
                     <p>LÀM VIỆC VỚI Array:</p>
                     <div class="">
-                      <p
-                        role="button"
-                        data-bs-toggle="collapse"
-                        class="collapsed"
-                        href="#array1">
+                      <p role="button" data-bs-toggle="collapse" class="collapsed" href="#array1">
                         Create and test a Array:
                       </p>
-                      <ul
-                        id="array1"
-                        class="collapse mb-4"
-                        data-bs-parent=".array">
+                      <ul id="array1" class="collapse mb-4" data-bs-parent=".array">
                         <li>var myArray = ["100000", "875000", "3600"];</li>
                         <li>var myArray = new Array("100", "947289", "728");</li>
                         <li>console.log(typeof myArray); // Object</li>
@@ -554,17 +346,10 @@
                     </div>
 
                     <div class="">
-                      <p
-                        role="button"
-                        data-bs-toggle="collapse"
-                        class="collapsed"
-                        href="#array2">
+                      <p role="button" data-bs-toggle="collapse" class="collapsed" href="#array2">
                         Phương thức toString() và join(): Convert mảng sang string:
                       </p>
-                      <ul
-                        id="array2"
-                        class="collapse mb-4"
-                        data-bs-parent=".array">
+                      <ul id="array2" class="collapse mb-4" data-bs-parent=".array">
                         <li>var languages = ["JavaScript", "PHP", "Ruby"];</li>
                         <li>var newLanguages = languages.toString();</li>
                         <li>toString() Không nhận tham số</li>
@@ -578,17 +363,10 @@
                     </div>
 
                     <div class="">
-                      <p
-                        role="button"
-                        data-bs-toggle="collapse"
-                        class="collapsed"
-                        href="#array3">
+                      <p role="button" data-bs-toggle="collapse" class="collapsed" href="#array3">
                         Phương thức pop(): Xóa elements cuối mảng.
                       </p>
-                      <ul
-                        id="array3"
-                        class="collapse mb-4"
-                        data-bs-parent=".array">
+                      <ul id="array3" class="collapse mb-4" data-bs-parent=".array">
                         <li>var languages1 = ["JavaScript", "PHP", "Ruby"];</li>
                         <li>console.log(languages1.pop());</li>
                         <li>Xóa elements cuối mảng và trả về phần tử đã xóa (string)</li>
@@ -597,17 +375,10 @@
                     </div>
 
                     <div class="">
-                      <p
-                        role="button"
-                        data-bs-toggle="collapse"
-                        class="collapsed"
-                        href="#array4">
+                      <p role="button" data-bs-toggle="collapse" class="collapsed" href="#array4">
                         Phương thức push(): Thêm elements vào mảng.
                       </p>
-                      <ul
-                        id="array4"
-                        class="collapse mb-4"
-                        data-bs-parent=".array">
+                      <ul id="array4" class="collapse mb-4" data-bs-parent=".array">
                         <li>var languages2 = ["JavaScript", "PHP", "Ruby"];</li>
                         <li>console.log(languages2.push("Dart", "Java"));</li>
                         <li>Thêm một hoặc nhiều elements vào cuối mảng</li>
@@ -616,17 +387,10 @@
                     </div>
 
                     <div class="">
-                      <p
-                        role="button"
-                        data-bs-toggle="collapse"
-                        class="collapsed"
-                        href="#array5">
+                      <p role="button" data-bs-toggle="collapse" class="collapsed" href="#array5">
                         Phương thức shift(): Xóa elements đầu mảng.
                       </p>
-                      <ul
-                        id="array5"
-                        class="collapse mb-4"
-                        data-bs-parent=".array">
+                      <ul id="array5" class="collapse mb-4" data-bs-parent=".array">
                         <li>var languages3 = ["JavaScript", "PHP", "Ruby"];</li>
                         <li>console.log(languages3.shift());</li>
                         <li>shift() Không nhận tham số</li>
@@ -641,17 +405,10 @@
                     </div>
 
                     <div class="">
-                      <p
-                        role="button"
-                        data-bs-toggle="collapse"
-                        class="collapsed"
-                        href="#array6">
+                      <p role="button" data-bs-toggle="collapse" class="collapsed" href="#array6">
                         Phương thức unshift(): Thêm elements đầu mảng.
                       </p>
-                      <ul
-                        id="array6"
-                        class="collapse mb-4"
-                        data-bs-parent=".array">
+                      <ul id="array6" class="collapse mb-4" data-bs-parent=".array">
                         <li>var languages4 = ["JavaScript", "PHP", "Ruby"];</li>
                         <li>console.log(languages4.unshift("Dart"));</li>
                         <li>Có nhận một hoặc nhiều tham số</li>
@@ -660,17 +417,10 @@
                     </div>
 
                     <div class="">
-                      <p
-                        role="button"
-                        data-bs-toggle="collapse"
-                        class="collapsed"
-                        href="#array7">
+                      <p role="button" data-bs-toggle="collapse" class="collapsed" href="#array7">
                         Phương thức splice(): Thêm elements đầu mảng.
                       </p>
-                      <ul
-                        id="array7"
-                        class="collapse mb-4"
-                        data-bs-parent=".array">
+                      <ul id="array7" class="collapse mb-4" data-bs-parent=".array">
                         <li>var languages5 = ["JavaScript", "PHP", "Ruby"];</li>
                         <li>languages5.splice(0); // []: Xóa tất cả element</li>
                         <li>languages5.splice(1, 1); // Xóa 1 element</li>
@@ -696,17 +446,10 @@
                     </div>
 
                     <div class="">
-                      <p
-                        role="button"
-                        data-bs-toggle="collapse"
-                        class="collapsed"
-                        href="#array8">
+                      <p role="button" data-bs-toggle="collapse" class="collapsed" href="#array8">
                         Phương thức concat(): Hợp nhất Mảng.
                       </p>
-                      <ul
-                        id="array8"
-                        class="collapse mb-4"
-                        data-bs-parent=".array">
+                      <ul id="array8" class="collapse mb-4" data-bs-parent=".array">
                         <li>var languages6 = ["JavaScript", "PHP", "Ruby"];</li>
                         <li>var myFamily = ["Xuân Pháo", "Trang Chíp", "Trang Cún"];</li>
                         <li>console.log(myFamily.concat(languages6));</li>
@@ -721,17 +464,10 @@
                     </div>
 
                     <div class="">
-                      <p
-                        role="button"
-                        data-bs-toggle="collapse"
-                        class="collapsed"
-                        href="#array9">
+                      <p role="button" data-bs-toggle="collapse" class="collapsed" href="#array9">
                         Phương thức slice(): Cắt elements trong Mảng.
                       </p>
-                      <ul
-                        id="array9"
-                        class="collapse mb-4"
-                        data-bs-parent=".array">
+                      <ul id="array9" class="collapse mb-4" data-bs-parent=".array">
                         <li>var languages8 = ["JavaScript", "PHP", "Ruby"];</li>
 
                         <li>console.log(languages8.slice(1, 2));</li>

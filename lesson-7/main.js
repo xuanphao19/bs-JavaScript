@@ -254,6 +254,8 @@ var number11 = new Array("100", "947289", "728");
 // Cách Kiểm tra kiểu dữ liệu của Arr:
 console.log(typeof number10); // Object
 console.log(Array.isArray(number10)); // Boolean
+console.log(number10 instanceof Array); // true
+console.log({ a: 1 } instanceof Object); // true
 
 // Kiểm tra độ dài mảng:
 console.log(number11.length);
@@ -438,12 +440,12 @@ function MyFamily(name, age, gender, bio) {
 }
 
 var thuTrang = new MyFamily("Thu Trang", 23, "female", "màu tím");
-thuTrang["height"] = "1.2m";
+thuTrang["height"] = "1.58m";
 console.log(thuTrang, thuTrang.getName());
 
 var haTrang = new MyFamily("Ha Trang", 13, "female", "màu hồng");
-haTrang.canNang = "100kg";
-haTrang.height = "1.2m";
+haTrang.canNang = "54kg";
+haTrang.height = "1.68m";
 haTrang.setHeight = (height) => {
   if (height) {
     haTrang.height = height;

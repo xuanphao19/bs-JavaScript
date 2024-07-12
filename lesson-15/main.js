@@ -81,9 +81,11 @@ function calculateFactorial(number) {
 console.log(calculateFactorial(3));
 
 // Cách hứng giá trị của một hàm?
-// Đệ quy?
-// Callback?
+// Đệ quy? Muốn hiểu về Đệ quy cần hiểu về Callback, TTSS?
+// Callback? Muốn hiểu về Callback thì cần phải hiểu về Hàm?
 // ! Hàm::::
 // + Định nghĩa ở đâu? Định nghĩa ntn?
-// + Nhận bao nhiêu tham số? Tham số là gì?
+// + Nhận bao nhiêu tham số? Tham số là (kiểu dữ liệu) gì?
 // + Trả ra cái gì? Điều kiện (logic) để trả ra là gì? (có hay không).
+// + Trả về ở đâu?
+// + Gọi Hàm ở đâu? Điều kiện (logic) để hàm được gọi?

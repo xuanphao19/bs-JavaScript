@@ -1,6 +1,6 @@
 {
   "proseWrap": "always",
-  "singleAttributePerLine": true,
+  "singleAttributePerLine": false,
   "bracketSameLine": true,
   "bracketSpacing": true,
   "arrowParens": "always",
