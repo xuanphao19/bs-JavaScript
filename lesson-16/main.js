@@ -1,12 +1,16 @@
 // Làm việc với mảng II
 /*
-  forEach() // Thực hiện hành động được chỉ định
-  every() // Kiểm tra điều kiện
-  some() // Kiểm tra điều kiện
-  find() // Tìm kiếm
-  filter() // Tìm kiếm
-  map() // Vẽ bản đồ mảng
-  reduce() // Tính toán gì đó!
+  forEach(callback) // Thực hiện hành động được chỉ định
+
+  every(callback) // Kiểm tra điều kiện
+  some(callback) // Kiểm tra điều kiện
+  find(callback) // Tìm kiếm
+  filter(callback) // Tìm kiếm
+  map(callback) // Vẽ bản đồ mảng
+
+  reduce(callback) // Tính toán gì đó!
+
+
 */
 
 // every; some; find; Có thể lặp qua tất cả các phần tử của mảng!
@@ -184,3 +188,21 @@ Array.prototype.myReduce = function (callback, initialValue) {
 const sum = numbers.myReduce((acc, currentValue) => acc + currentValue, 0);
 
 console.log(sum); // Output: 15
+
+// Phương thức includes():
+// Là phương thức tồn tại sẵn trong str và arr
+// Trả về true or false
+
+// Với str để kiểm tra trong chuỗi có một từ nào đó không
+const title = "Đây là một tiêu đề";
+console.log(title.includes("là"));
+// Tham số 1: Từ cần tìm kiếm
+// Tham số 2: Vị trí bắt đầu tìm kiếm
+// Tìm thấy trả ra true và ngược lại
+
+// Với arr để kiểm tra trong mảng có phần tử nào đó không
+const myFamily102 = ["Thu Trang", "Hạ Trang", "Xuân Bảo"];
+console.log(myFamily102.includes("Thu Trang"));
+// Tham số 1: Từ cần tìm kiếm
+// Tham số 2: Vị trí bắt đầu tìm kiếm
+// Tìm thấy trả ra true và ngược lại

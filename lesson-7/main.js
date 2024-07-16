@@ -479,7 +479,7 @@ function MyFamily12(name, age, gender, bio) {
 MyFamily12.prototype.height = "1.6m";
 
 var chiToi = new MyFamily12("Thu Trang", 23, "Nữ", "màu vàng");
-var toi = new MyFamily12("Hạ Trang", 15, "Nữ", "màu xanh");
+var itsMe = new MyFamily12("Hạ Trang", 15, "Nữ", "màu xanh");
 
 console.log(chiToi.height);
-console.log(toi);
+console.log(itsMe);

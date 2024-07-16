@@ -16,26 +16,28 @@ const lessonLinks = [
   { title: "Loops in JavaScript." },
   { title: "ĐỆ QUY: RECURSIVE in JavaScript." },
   { title: "Làm việc với Mảng phần hai." },
-  { title: "" },
-  { title: "" },
-  { title: "" },
+  { title: "⭐ CallBack in JavaScript ⭐" },
+  { title: "⭐ HTML DOM ⭐" },
+  { title: "DOM events in JavaScript 💔" },
   { title: "" },
   { title: "" },
   { title: "" },
   { title: "Ôn tập Phần 1" },
   { name: "bai_tap_thuc_hanh", id: "baitap", title: "--- Bài tập thực hành: ---" },
+  { name: "bai_tap_HTML_DOM", id: "baitapDOM", title: "---⭐ Bài tập HTML DOM: ⭐---" },
 ];
 
 // Lấy phần tử (element) "lesson-JS" trong html
 const lessonList = document.getElementById("lesson-JS");
 
 // Duyệt qua mảng link bài học (lessonLinks)
-const lessonMenu = lessonLinks.forEach((link, i) => {
+const callBack = (link, i) => {
   // Tạo một thẻ <a> trong HTML
   const itemLink = document.createElement("a");
 
   // add thêm class vào thẻ <a> vừa tạo ra.
-  itemLink.setAttribute("class", "nav-link");
+  itemLink.className = "nav-link";
+  itemLink.setAttribute("role", "link");
 
   // Thêm thuộc tính href cho thẻ <a>
   itemLink.href = `./${link.name ? link.name : `lesson-${i + 1}`}/${link.id ? link.id : `bai${i + 1}`}.html`;
@@ -48,7 +50,8 @@ const lessonMenu = lessonLinks.forEach((link, i) => {
 
   // append thẻ <a> vào làm con của phần tử lessonList
   lessonList.appendChild(itemLink);
-});
+};
+const lessonMenu = lessonLinks.forEach(callBack);
 
 // Kiểm tra giá trị biến lessonMenu:
 console.log(lessonMenu); // forEach luôn trả về undefined

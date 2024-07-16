@@ -1,9 +1,35 @@
-
 h1 {
   margin-top: 50px;
   text-align: center;
   color: #6b2208;
-  font-size: 50px;
+
   font-weight: bold;
   font-family: "Times New Roman", Times, serif;
+}
+
+.box .heading:first-child {
+  color: #de5827;
+}
+
+.box .heading:nth-child(2) {
+  color: #fa04fa;
+}
+
+.box.box-1 {
+  color: rgb(36, 156, 106);
+  font-size: 50px;
+}
+
+.thuTrang {
+  font-size: 60px;
+  color: rgb(255, 0, 255);
+}
+
+.blue {
+  color: rgb(14, 148, 244);
+  font-size: 50px;
+}
+.red h2 {
+  color: rgb(244, 14, 14);
+  font-size: 30px;
 }
