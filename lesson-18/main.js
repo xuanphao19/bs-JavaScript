@@ -2,6 +2,11 @@
 
 // // ⭐⭐ Kiến thức cơ bản về DOM HTML: ⭐⭐
 
+
+
+
+
+
 //⭐ DOM HTML là gì?
 // DOM là viết tắt của Document Object Model: Mô hình Đối tượng Tài liệu
 // HTML DOM là một chuẩn lập trình được định nghĩa bởi W3C, cho phép các lập trình viên truy cập và thao tác với nội dung, cấu trúc và phong cách của các tài liệu.
@@ -80,7 +85,7 @@
 //💔// ⭐⭐ Làm việc với DOM Attribute Node ⭐⭐
 
 // // ⭐ Lấy ra một attribute
-const headingElement = document.querySelector("h2");
+// const headingElement = document.querySelector("h2");
 // console.log(headingElement);
 // Nhận được ElementNode: thẻ h2
 
@@ -101,7 +106,7 @@ const headingElement = document.querySelector("h2");
 // // ⭐ InnerText vs textContent Property
 // Không nhận ElementNode làm văn bản
 
-const headingElement1 = document.querySelector("h2");
+// const headingElement1 = document.querySelector("h2");
 // console.log(headingElement1);
 // Trả về ElementNode
 
@@ -227,4 +232,4 @@ const changeColor = () => {
 
 setInterval(() => {
   changeColor();
-}, 200);
+}, 1000);
