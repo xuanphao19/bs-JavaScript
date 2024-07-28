@@ -1,0 +1,50 @@
+/*
+
+
+
+
+
+
+*/
+body {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 100vw;
+  height: 100vh;
+  background-image: url("../../assets/images/background.jpg");
+  background-size: cover;
+  background-position: center;
+}
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+#rating-stars {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+  filter: drop-shadow(2px 4px 6px black);
+}
+.star-icon {
+  position: relative;
+  width: 128px;
+  height: 128px;
+  cursor: pointer;
+}
+.star {
+  position: absolute;
+  inset: 0;
+}
+.star.full path {
+  fill: gold;
+}
+.star.empty path {
+  fill: rgb(214, 207, 207);
+}
+.star.half path {
+  fill: gold;
+}

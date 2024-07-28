@@ -1,0 +1,55 @@
+/*
+
+
+
+
+
+
+
+*/
+body {
+  margin: 0;
+  width: 100vw;
+  min-height: 100vh;
+}
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+.my-img {
+  display: flex;
+  height: auto;
+  width: 60%;
+  margin: auto;
+}
+
+.backTop {
+  display: none;
+  align-items: center;
+  justify-content: center;
+  position: fixed;
+  bottom: 20px;
+  right: 20px;
+  padding: 8px;
+  width: 40px;
+  height: 46px;
+  border-radius: 8px;
+  color: #0dcaf0;
+  border: 1px solid currentColor;
+  background-color: rgba(231, 157, 157, 0.224);
+  cursor: pointer;
+  transition: 0.3s;
+}
+
+.backTop.show {
+  display: flex;
+}
+
+.backTop:active {
+  opacity: 0.8;
+  transition: 0.3s;
+  transform: translateY(5px);
+}

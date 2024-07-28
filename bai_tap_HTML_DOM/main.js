@@ -89,17 +89,83 @@ Gán chuỗi HTML vừa tạo vào thuộc innerHTML của thẻ ul giống bài
 };
 renderCourses(courses); */
 
-// ⭐ Bài 139. Thực hành với DOM attribute:
-// ⭐ Bài 139. Thực hành với DOM attribute:
-// ⭐ Bài 139. Thực hành với DOM attribute:
-// ⭐ Bài 139. Thực hành với DOM attribute:
-// ⭐ Bài 139. Thực hành với DOM attribute:
-// ⭐ Bài 139. Thực hành với DOM attribute:
-// ⭐ Bài 139. Thực hành với DOM attribute:
-// ⭐ Bài 139. Thực hành với DOM attribute:
-// ⭐ Bài 139. Thực hành với DOM attribute:
-// ⭐ Bài 139. Thực hành với DOM attribute:
-// ⭐ Bài 139. Thực hành với DOM attribute:
-// ⭐ Bài 139. Thực hành với DOM attribute:
-// ⭐ Bài 139. Thực hành với DOM attribute:
-// ⭐ Bài 139. Thực hành với DOM attribute:
+// ⭐ Bài 148. Thực hành sử dụng DOM CSS:
+// Các bạn hãy thay đổi màu nền của thẻ div có class là .red thành màu #f00 và màu chữ của thẻ p thành màu #f05123.
+
+/* const styleElements = document.querySelector(".red");
+console.log(styleElements);
+
+Object.assign(styleElements.style, {
+  backgroundColor: "#f00",
+  borderRadius: "10px",
+});
+
+const color = document.querySelector(".blue");
+console.log(color);
+
+color.style.color = "#f05123"; */
+
+// ⭐ Bài 152. Thực hành sử dụng ClassList #1:
+// Các bạn hãy thực hiện các yêu cầu dưới đây:
+/* Thêm class title vào thẻ h1
+Thay thế class sub-title ở thẻ p bằng class content
+Note: Hãy sử dụng kiến thức học được ở bài ClassList Property, không được sử dụng thuộc tính className nhé. */
+
+/* const headingEl = document.getElementById("heading");
+console.log(headingEl);
+
+headingEl.setAttribute("class", "heading-1234");
+headingEl.className = "heading";
+headingEl.classList.add("title");
+headingEl.classList.toggle("title-12345");
+
+const paragraph = document.querySelector(".sub-title");
+paragraph.setAttribute("class", "content paragraph");
+paragraph.className = "heading heading-1234";
+ */
+
+// ⭐ Bài 153. Thực hành sử dụng ClassList #2:
+/*
+Cho trước file HTML có các thẻ div, các bạn hãy thêm class box vào các thẻ div này nhé.
+Gợi ý: Bạn có thể sử dụng forEach lặp qua các phần tử div, nhưng trước hết các bạn phải lấy được danh sách các phần tử div ra nhé.
+Note: Hãy sử dụng kiến thức học được ở bài ClassList Property, không được sử dụng thuộc tính className nhé.
+*/
+
+// const parent = document.querySelector(".bai153");
+
+/* const listItem = parent.querySelectorAll("div");
+listItem.forEach((element) => {
+  element.classList.add("box");
+}); */
+
+/* const listItem = parent.getElementsByTagName("div");
+for (let i = 0; i < listItem.length; i++) {
+  const element = listItem[i];
+  element.classList.add("box");
+}
+console.log(listItem); */
+
+// ⭐ Bài 156. Thực hành sử dụng DOM Events:
+// Cho trước thẻ button, các bạn hãy viết code JS sao cho khi click vào button sẽ đổi màu chữ button sang màu #fff.
+
+// const eventClick = document.querySelector(".btn-color");
+// console.log(eventClick);
+
+// eventClick.onclick = (event) => {
+//   const target = event.target;
+//   const currentTarget = event.currentTarget;
+
+//   console.log(currentTarget);
+
+//   eventClick.style.color = "blue";
+// };
+
+// const handleClick = (event) => {
+//   const target = event.target;
+//   const currentTarget = event.currentTarget;
+
+//   console.log(currentTarget);
+
+//   eventClick.style.color = "blue";
+// };
+// eventClick.addEventListener("click", handleClick);

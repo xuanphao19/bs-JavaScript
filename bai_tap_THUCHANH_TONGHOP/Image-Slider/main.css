@@ -1,0 +1,98 @@
+/*
+
+
+
+
+
+
+
+
+*/
+
+body {
+  margin: 0;
+  font-family: monospace;
+}
+
+* {
+  margin: 0;
+  padding: 0;
+}
+
+.slider {
+  width: 1300px;
+  max-width: 100vw;
+  height: 700px;
+  margin: auto;
+  position: relative;
+  overflow: hidden;
+}
+
+.list {
+  position: absolute;
+  top: 0;
+  left: 0;
+  height: 100%;
+  display: flex;
+  width: max-content;
+  transition: 1s;
+}
+
+.list img {
+  width: 1300px;
+  max-width: 100vw;
+  height: 100%;
+  object-fit: contain;
+}
+
+.button {
+  position: absolute;
+  top: 45%;
+  left: 5%;
+  width: 90%;
+  display: flex;
+  justify-content: space-between;
+}
+.button button {
+  width: 50px;
+  height: 50px;
+  border-radius: 9999px;
+  font-size: 30px;
+  color: red;
+  background-color: #ffcdcd54;
+  outline: none;
+  border: #ffcdcdbd;
+  font-family: monospace;
+  font-weight: bold;
+}
+
+.dots {
+  position: absolute;
+  bottom: 10px;
+  left: 0;
+  width: 100%;
+  margin: 0;
+  padding: 0;
+  display: flex;
+  justify-content: center;
+}
+
+.dots li {
+  margin: 20px;
+  width: 10px;
+  height: 10px;
+  list-style: none;
+  border-radius: 10px;
+  background-color: #333;
+  transition: 1s;
+}
+
+.slide .active {
+  width: 30px;
+}
+
+@media screen and (max-width: 768px) {
+  .slider {
+    height: 400px;
+  }
+}

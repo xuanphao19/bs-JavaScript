@@ -13,3 +13,13 @@ h1 {
   font-size: 20px;
   font-style: italic;
 }
+.phaoxuan {
+  width: 128px;
+}
+
+.top-bar {
+  position: fixed;
+  top: 50px;
+  right: 50px;
+  z-index: 99;
+}

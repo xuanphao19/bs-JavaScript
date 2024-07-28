@@ -19,12 +19,13 @@ const lessonLinks = [
   { title: "⭐ CallBack in JavaScript ⭐" },
   { title: "⭐ HTML DOM ⭐" },
   { title: "DOM events in JavaScript 💔" },
-  { title: "" },
+  { title: "⭐⭐ JSON ⭐⭐" },
   { title: "" },
   { title: "" },
   { title: "Ôn tập Phần 1" },
   { name: "bai_tap_thuc_hanh", id: "baitap", title: "--- Bài tập thực hành: ---" },
   { name: "bai_tap_HTML_DOM", id: "baitapDOM", title: "---⭐ Bài tập HTML DOM: ⭐---" },
+  { name: "bai_tap_THUCHANH_TONGHOP", id: "thucHanh", title: "---⭐ Bài tập Thực Hành Tổng Hợp: ⭐---" },
 ];
 
 // Lấy phần tử (element) "lesson-JS" trong html

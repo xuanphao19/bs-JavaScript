@@ -1,3 +1,12 @@
+/*
+
+
+
+
+
+
+
+*/
 h1 {
   margin-top: 50px;
   text-align: center;
@@ -5,4 +14,96 @@ h1 {
 
   font-weight: bold;
   font-family: "Times New Roman", Times, serif;
+}
+
+input[type="text"] {
+  width: 250px;
+  height: 48px;
+  border: 1px solid;
+  border-radius: 4px;
+  font-size: 20px;
+  margin-top: 20px;
+}
+
+input[type="checkbox"] {
+  width: 200px;
+  height: 30px;
+  border: 1px solid;
+  border-radius: 4px;
+  margin-top: 20px;
+}
+
+input[type="name"] {
+  width: 250px;
+  height: 48px;
+  border: 1px solid;
+  border-radius: 4px;
+  font-size: 20px;
+  margin-top: 20px;
+}
+
+ul {
+  display: none;
+}
+
+input:focus ~ ul {
+  display: block;
+}
+#zoomButton,
+.btn-ctrl {
+  font-weight: bold;
+  font-size: 20px;
+  min-width: 120px;
+  background-color: #adfff3;
+  padding: 10px 22px;
+  border-radius: 999px;
+  border: none;
+  color: black;
+}
+
+/* CSS cho #map tùy chỉnh */
+#map {
+  height: 350px;
+  width: 500px;
+  margin-left: auto;
+  border: 1px solid blue;
+  border-radius: 16px;
+}
+/* CSS cho icon tùy chỉnh */
+.leaflet-pane.leaflet-marker-pane img {
+  width: 40px;
+  height: 40px;
+  border-radius: 50%;
+  background-color: red;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  color: white;
+  font-size: 14px;
+  font-weight: bold;
+  overflow: hidden;
+  border: 2px solid white;
+  /* box-shadow: 0 0 10px rgba(0, 0, 0, 0.5); */
+}
+/* CSS cho popup */
+.leaflet-popup-content-wrapper {
+  border-radius: 10px;
+  background: #ccf5c2cc;
+  border: 1px solid rgba(30, 255, 0, 0.725);
+}
+.leaflet-popup-content-wrapper,
+.leaflet-popup-tip {
+  background: #ccf5c2cc;
+}
+.leaflet-popup-content {
+  padding: 6px;
+  font-family: "UVN Bach Tuyet", sans-serif;
+  font-size: 16px;
+  color: blue;
+}
+.leaflet-container a.leaflet-popup-close-button {
+  top: 1px;
+  right: 4px;
+  color: #fd00ff;
+  font: 18px / 24px Tahoma, Verdana, sans-serif;
 }

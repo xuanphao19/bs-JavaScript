@@ -1,0 +1,99 @@
+/*
+
+
+
+
+
+
+*/
+
+body {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin: 0;
+  min-height: 100vh;
+  font-family: system-ui;
+  color: #eee;
+  background-image: linear-gradient(to bottom right, #3b983b, #589);
+}
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+.phaoxuan {
+  width: 128px;
+  padding: 2px;
+  border: 1px solid #85ff21;
+  border-radius: 9999px;
+  overflow: hidden;
+}
+
+.container {
+  text-align: center;
+}
+
+.logo img {
+  width: 256px;
+}
+
+h1 {
+  margin-bottom: 50px;
+  font-size: xxx-large;
+  font-weight: 100;
+}
+
+.time {
+  display: grid;
+  grid-template-columns: 100px 100px 100px 100px;
+  grid-template-rows: 100px;
+  column-gap: 20px;
+  font-size: 25px;
+  color: #59ff6b !important;
+}
+
+.time .item {
+  position: relative;
+  background-image: repeating-linear-gradient(
+    to right bottom,
+    #46a152 0px,
+    #51818a 8px,
+    transparent 1px,
+    transparent 8px
+  );
+}
+
+.time .item::after,
+.time .item::before {
+  content: "❤";
+  position: absolute;
+  left: 0;
+  top: 50%;
+  transform: translate(0, -50%);
+  height: 20px;
+  font-size: 16px;
+  color: violet;
+}
+
+.time .item::after {
+  left: unset;
+  right: 0;
+}
+
+.item.day span,
+.item.hour span,
+.item.minute span,
+.item.second span {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-size: xxx-large;
+  font-weight: 550;
+  color: #cfff84;
+}
+
+.show {
+  display: none;
+}

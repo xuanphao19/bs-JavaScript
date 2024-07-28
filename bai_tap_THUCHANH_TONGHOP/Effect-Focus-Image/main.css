@@ -1,0 +1,39 @@
+/*
+
+
+
+
+
+
+*/
+
+:root {
+  --left-focus: "50%";
+  --top-focus: "50%";
+}
+
+body {
+  width: 100vw;
+  height: 100vh;
+}
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+.banner {
+  width: 100%;
+  height: 100vh;
+  background-image: url(../../assets/images/bgr-love.png);
+  background-size: cover;
+  background-position: center;
+}
+
+.inner {
+  width: 100%;
+  height: 100vh;
+  backdrop-filter: blur(40px);
+  mask: radial-gradient(circle at var(--left-focus) var(--top-focus), transparent 0%, #000000 30%);
+}

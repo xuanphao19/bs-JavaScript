@@ -4,9 +4,21 @@
 }
 .desc {
   color: #9cdcfe;
+}
 
+.red {
+  width: 100px;
+  height: 100px;
+  background-color: #000;
+  color: #0e008f;
+}
 
-
-
-
+button.btn-color {
+  font-weight: bold;
+  font-size: 20px;
+  width: 120px;
+  background-color: #ff0505;
+  padding: 9px 16px;
+  border-radius: 999px;
+  border: none;
 }

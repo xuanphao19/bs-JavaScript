@@ -1,0 +1,105 @@
+/*
+
+
+
+
+
+
+*/
+
+body {
+  display: flex;
+  margin: 0;
+  min-height: 100vh;
+  justify-content: center;
+  align-items: center;
+  background-image: linear-gradient(#f5f5ff, #e8a2a2);
+}
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+.container {
+  display: grid;
+  grid-template-columns: auto auto;
+}
+
+.left .right {
+  width: 50%;
+  padding-left: 5%;
+  position: relative;
+}
+
+.left {
+  width: 210px;
+  height: 592px;
+  background-color: #18142f;
+  margin: 30px auto;
+  padding: 16px;
+  border-radius: 40px;
+  transition: 0.5s;
+  text-align: center;
+}
+
+.left .item img {
+  height: 100%;
+}
+
+.left .item:hover {
+  background-color: blue;
+}
+
+.mockup {
+  position: relative;
+  margin-top: 100px;
+  width: 500px;
+  height: 600px;
+  background-image: url("../../assets/images/shỉt.jpg");
+  background-size: 100%;
+  background-repeat: no-repeat;
+  filter: drop-shadow(0 0 40px rgb(37, 35, 35));
+}
+.mockup-desc,
+.graphic {
+  position: absolute;
+  top: 20%;
+  left: 50%;
+  width: 90px;
+  height: 120px;
+  transform: translate(-50%);
+  transition: 0.3s;
+}
+
+.mockup-desc {
+  display: none;
+  top: 44%;
+  left: 50%;
+  width: 100px;
+  height: 20px;
+  font-size: 42px;
+  font-style: italic;
+  color: red;
+  transform: translate(-50%);
+  transition: 0.3s;
+}
+
+.mockup:has(img) .mockup-desc {
+  display: block;
+}
+
+.graphic.drag {
+  border: 2px dotted #333;
+}
+
+.item img,
+.graphic img {
+  width: 100%;
+  border-radius: 26px;
+}
+
+.graphic img {
+  box-shadow: 0px 0px 8px #1e87ff;
+}

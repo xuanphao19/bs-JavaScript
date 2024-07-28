@@ -1,0 +1,159 @@
+/*
+
+
+
+
+
+
+*/
+
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+}
+.container {
+  width: 70%;
+  margin-inline: auto;
+}
+h1 {
+  font-size: 24px;
+}
+
+#toast {
+  position: fixed;
+  top: 32px;
+  right: 32px;
+  transition: all 0.3s;
+  z-index: 999999;
+}
+
+.toast {
+  --delay: 3s;
+  --duration: 1s;
+  display: flex;
+  align-items: center;
+  padding: 20px 0;
+  min-width: 400px;
+  max-width: 450px;
+  background-color: #fff;
+  border-radius: 2px;
+  border-left: 4px solid;
+  box-shadow: 0 5px 8px rgba(0, 0, 0, 0.08);
+  animation: slideIn var(--duration) linear, slideOut var(--duration) var(--delay) linear forwards;
+  transition: all 0.3s;
+}
+
+@keyframes slideIn {
+  from {
+    opacity: 0;
+    transform: translateX(calc(100% + 32px));
+  }
+  to {
+    opacity: 1;
+    transform: translateX(0);
+  }
+}
+
+@keyframes slideOut {
+  to {
+    opacity: 0;
+  }
+}
+
+.toast + .toast {
+  margin-top: 20px;
+}
+
+.toast__icon {
+  font-size: 24px;
+}
+.toast__icon,
+.toast__close {
+  padding: 0 16px;
+}
+
+.toast__icon .avatar {
+  width: 50px;
+  height: 50px;
+  border-radius: 9999px;
+  border: 1px solid #0cc4f3;
+  box-shadow: 1px 1px 2px rgba(0, 0, 0, 0.8);
+}
+
+.toast__close {
+  font-size: 24px;
+  color: rgba(0, 0, 0, 0.3);
+  cursor: pointer;
+}
+.toast__body {
+  flex-grow: 1;
+}
+.toast__title {
+  font-size: 16px;
+  font-weight: 600;
+  color: violet;
+}
+.toast__msg {
+  margin-top: 6px;
+  font-size: 14px;
+  color: rgb(238, 168, 238);
+}
+
+.toast--success {
+  border-color: #47d864;
+}
+.toast--success .toast__icon {
+  color: #47d864;
+}
+
+.toast--info {
+  border-color: #2f86eb;
+}
+.toast--info .toast__icon {
+  color: #2f86eb;
+}
+
+.toast--warning {
+  border-color: #ffc021;
+}
+.toast--warning .toast__icon {
+  color: #ffc021;
+}
+
+.toast--error {
+  border-color: #ff623d;
+}
+.toast--error .toast__icon {
+  color: #ff623d;
+}
+
+.btnGroup {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 100%;
+  gap: 30px;
+  margin-top: 300px;
+}
+
+.btn {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin-bottom: 20px;
+  padding: 9px 22px;
+  font-size: 18px;
+  border-radius: 9999px;
+  border-color: currentColor;
+  user-select: none;
+}
+
+.btn--success {
+  color: #08b40e;
+  background-color: #dcf5dd;
+}
+.btn--error {
+  color: #bc0d0d;
+  background-color: #f5dfdf;
+}

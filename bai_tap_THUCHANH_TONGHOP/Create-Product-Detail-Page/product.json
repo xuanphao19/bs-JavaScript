@@ -1,0 +1,62 @@
+[
+  {
+    "id": 1,
+    "name": "Chị Cún",
+    "age": 23,
+    "image": "../../assets/images/cunmisa.jpg"
+  },
+  {
+    "id": 2,
+    "name": "Toi",
+    "age": 15,
+    "image": "../../assets/images/HaTrang.jpg"
+  },
+  {
+    "id": 3,
+    "name": "Em toi",
+    "age": 6,
+    "image": "../../assets/images/XuanPhao.jpg"
+  },
+  {
+    "id": 4,
+    "name": "Em toi",
+    "age": 6,
+    "image": "../../assets/images/XuanPhao.jpg"
+  },
+  {
+    "id": 5,
+    "name": "Em toi",
+    "age": 6,
+    "image": "../../assets/images/XuanPhao.jpg"
+  },
+  {
+    "id": 6,
+    "name": "Em toi",
+    "age": 6,
+    "image": "../../assets/images/XuanPhao.jpg"
+  },
+  {
+    "id": 7,
+    "name": "Em toi",
+    "age": 6,
+    "image": "../../assets/images/XuanPhao.jpg"
+  },
+  {
+    "id": 8,
+    "name": "Em toi",
+    "age": 6,
+    "image": "../../assets/images/XuanPhao.jpg"
+  },
+  {
+    "id": 9,
+    "name": "Em toi",
+    "age": 6,
+    "image": "../../assets/images/XuanPhao.jpg"
+  },
+  {
+    "id": 10,
+    "name": "Em toi",
+    "age": 6,
+    "image": "../../assets/images/XuanPhao.jpg"
+  }
+]

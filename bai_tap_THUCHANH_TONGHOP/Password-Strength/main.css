@@ -1,0 +1,69 @@
+/*
+
+
+
+
+
+
+*/
+
+body {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin: 0;
+  width: 100vw;
+  min-height: 100vh;
+  font-family: monospace;
+  font-size: 20px;
+  overflow: hidden;
+  color: #00ff56;
+  background-image: linear-gradient(to bottom, #1c1c9b, pink);
+}
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+.group {
+  width: 300px;
+}
+
+.group label {
+  display: block;
+  padding: 10px 0;
+}
+
+.group input {
+  border: none;
+  outline: none;
+  padding: 10px;
+  width: 100%;
+  border-radius: 10px;
+  background-color: #e9b3d4;
+  color: #b60000;
+  font-size: 15px;
+}
+
+.desc {
+  margin-top: 20px;
+}
+
+.power-container,
+.power-point {
+  width: 100%;
+  height: 8px;
+
+  border-radius: 20px;
+  background-color: pink;
+}
+.power-container .power-point {
+  margin-top: 10px;
+  width: 1%;
+  height: 8px;
+  border-radius: 20px;
+  background-color: red;
+  transition: 0.5s;
+}

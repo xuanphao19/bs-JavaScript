@@ -1,4 +1,12 @@
 <!DOCTYPE html>
+<!--
+
+
+
+
+
+
+-->
 <html lang="en">
   <head>
     <meta charset="UTF-8" />
@@ -8,6 +16,8 @@
     <!-- THƯ VIỆN BOOTSTRAP -->
     <script src="../assets/vendor/bootstrap/js/bootstrap.bundle.min.js"></script>
     <link href="../assets/vendor/bootstrap/css/bootstrap.min.css" rel="stylesheet" />
+
+    <link rel="stylesheet" href="https://unpkg.com/leaflet/dist/leaflet.css" />
     <link rel="stylesheet" href="../app.css" />
     <link rel="stylesheet" href="./main.css" />
   </head>
@@ -16,13 +26,60 @@
     <!-- ===================== -->
     <!-- Tự học JavaScript Thành công! -->
     <!-- ===================== -->
-    <a href="../index.html" class="btn btn-primary position-fixed top-0 end-0 me-5 mt-3 px-4 rounded-5">Về Trang chủ</a>
-    <div class="container">
-      <h1 >
-        Bài 19: 🟢🟢 DOM events in JavaScript ⭐⭐
-        <span>1235464</span>
-      </h1>
+
+    <div class="container position-relative z-3">
+      <a href="../index.html" class="d-flex flex-column align-items-center position-absolute top-0 end-0">
+        <img class="phaoxuan rounded-pill border p-1 border-primary" src="../assets/CuChiPha.png" alt="XuanPhao" />
+      </a>
     </div>
+
+    <div class="container">
+      <h1>Bài 19: 🟢🟢 DOM events in JavaScript ⭐⭐</h1>
+
+      <!-- <input class="name" type="text" placeholder="Enter Name" />
+      <input class="checkbox" type="checkbox" />
+
+      <select class="ctyList">
+        <option value="cty1">Hà Nội</option>
+        <option value="cty2">Ninh Bình</option>
+        <option value="cty3">Bắc Ninh</option>
+      </select>-->
+
+      <!-- <a
+        class="link"
+        href="https://fullstack.edu.vn/learning/javascript-co-ban?id=6dd78909-0225-4d57-bee7-20bec5d89773">
+        <span>F8 - Học lập trình</span>
+      </a>
+      <br />
+
+      <a class="link" href="https://chatgpt.com/">
+        <span>ChatGPT</span>
+      </a> -->
+
+      <!-- <input type="name" placeholder="What's your name?" />
+
+      <ul id="nameList">
+        <li>Phan Hiệp</li>
+        <li>Thanh Hòa</li>
+        <li>Thu Trang</li>
+        <li>Hạ Trang</li>
+        <li>Xuân Bảo</li>
+      </ul> -->
+
+      <!-- <div class="flower">
+        HALLO🌻
+        <br />
+        <button class="btn-ctrl">Ấn vào đây🍀</button>
+      </div>-->
+
+      <button class="btn-ctrl">Click me</button>
+      <div id="map"></div>
+      <button id="zoomButton">Zoom to Marker</button>
+    </div>
+    <!--
+
+-->
+    <script src="https://unpkg.com/leaflet/dist/leaflet.js"></script>
     <script src="./main.js"></script>
     <!-- ================ -->
   </body>
